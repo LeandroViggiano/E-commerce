@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemCount from './components/ItemCount/ItemCount'
+import ItemDetailContainer from './components/ItemDetail/ItemDetail'
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <ItemListContainer greeting={'Bienvenidos'}/>
-      <ItemCount stock={10} />
+      <ItemDetailContainer />
     </>
   )
 }

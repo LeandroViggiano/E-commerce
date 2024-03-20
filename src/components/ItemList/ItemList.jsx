@@ -2,8 +2,8 @@ const ItemList = ({ products }) => {
     return (
         <section>
             {
-                products.map(product => {6
-                    return 
+                products.map(product => {
+                    return <Item key={product.id} {...product}/>
                 })
             }
         </section>
