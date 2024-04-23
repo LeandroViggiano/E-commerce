@@ -1,3 +1,4 @@
+import classes from './Navbar.module.css'
 import CartWidget from "../CarWidget/CarWidget";
 import { Link, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
