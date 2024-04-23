@@ -1,14 +1,12 @@
 import Item from '../Item/Item'
 const ItemList = ({ products }) => {
     return (
-        <section>
-            {
-                products.map(product => {
-                    return <Item key={product.id} {...product}/>
-                })
-            }
-        </section>
+      <div style={{ display: 'flex', flexDirection: 'column' }} onClick={() => console.log('hice click en itemlist')}>
+        {products && products.map(product => {
+          return <Item key={product.id} {...product} />
+        })}
+      </div>
     )
-}
+  }
 
 export default ItemList
